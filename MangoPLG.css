@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+   font-family: Arial, sans-serif;
+   background:white;
+}
+#page-wrapper{
+  border: 4px solid green;
+}
+a{
+  text-decoration:none;
+  color:green;
+}
+li{
+  list-style:none
+}
+h2{
+  font-size:1.6em;
+  text-align:center;
+  color:green;
+}
+/*-------Header Section---------*/
+#header{
+  display:flex;
+  top:0;
+  margin: 0px auto;
+  width:100vw;
+  max-height:100vw;
+  height:95px;
+  padding-top:0.8vw;
+  position:fixed;
+  background-color:lightgray;
+}
+img{
+  max-width: 100%;
+  display: block;
+  width:12em;
+  height:4.5em;
+  margin-left:5vw;
+  border-radius:10px;
+  border:1px solid green;
+}
+#nav-bar{
+  margin-top:-0.2vw;
+  margin-left:18vw;
+ /* background:lightyellow;*/
+  width:35vw;
+  height:6vw;
+ /* border:1px solid red;*/
+ }
+.nav-list{
+  display:flex;
+  padding:1vw;
+}
+.nav-list li{
+  margin:2vw ;
+}
+/*----Form Section----*/
+#form-section{
+  margin-top: 8vw;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+#email{
+    max-width: 275px;
+    margin-top:1vw;
+    width: 100%;
+    padding: 5px;
+}
+#submit{
+    max-width: 100px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border-radius: 1px ;
+}
+#input{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/*-----Product Section----*/
+
+#Products, #Combo_Offers{
+  display:flex;
+  flex-direction:row;  
+  justify-content:space-around;
+  max-width: 300px; 
+  width: 100%;
+  margin: 0px auto; 
+}
+.product{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:1em;
+  padding:6em ;
+  padding-bottom:2em;
+  border: 1px solid lightgreen;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);  
+  background:url(https://tse4.mm.bing.net/th?id=OIP.LkyWvail6qN175AMfBQ9_gHaE6&pid=15.1&P=0&w=245&h=163);
+}
+.btn{
+  margin-top:2em;
+  padding:0.3em;
+}
+
+/*------How Satisfied ---*/
+
+#How_Satisfied {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  }
+iframe {
+    max-width: 560px;
+    width: 100%;
+  }
+/*-----Footer----*/
+
+footer{
+  margin:0px auto;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  background-color:lightgray;
+}
+.ulcontainer{
+    display: flex;
+    margin-top:0.5em;
+    margin-left:30em;
+  
+}
+.ulcontainer li{
+  display:flex;
+  flex-direction:column;
+  margin-top:1em;
+  padding: 0 1em;   
+  }
+
+/***---media Query-------*/
+@media(max-width:500px){
+  h2
+  {
+    font-size:1.2em;
+  }
+  #header{
+    width:30em;
+    height:10em;
+    flex-direction:column;
+  }
+  
+  #nav-bar{
+    height:5em; 
+    width:9em;
+    margin:0.2em 1.2em;
+  }
+  #header-img{
+    height:4em; 
+    width:8em;
+    margin:0.2em 1.2em;
+  } 
+  .nav-list{
+    flex-direction:column;
+    margin-left:3vw;
+  }
+  .nav-list li{
+    margin:0.5vw auto;
+  }
+  
+  /**---form Section----*/
+  #form-section{
+    margin-top:12em;
+  }
+  /*-------Products-----*/
+  #Products, #Combo_Offers{
+    flex-direction:column;
+  }
+  .product{
+    margin:0.4em;
+    padding:5em;
+    padding-bottom:1em;
+    align-items:center;
+  }
+  
+  /*----footer---*/
+  .ulcontainer{
+    flex-direction:column;
+    margin-left:1vw;
+    align-items:center;
+  }
+}
